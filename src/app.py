@@ -1,4 +1,6 @@
-from flask import Flask
+from flask import Flask, Response, jsonify
+import json
+import resource.TreeNeededResources as TNR
 
 from .config import app_config
 
@@ -13,10 +15,11 @@ def create_app(env_name):
   app.config.from_object(app_config[env_name])
 
   @app.route('/', methods=['GET'])
-  def index():
+  def getData():
     """
     Example endpoint
     """
-    return 'Congratulations! Your first endpoint is working'
+    dataListJson = TNR.getTreeNeeded()
+    return dataListJson, 200
 
   return app
