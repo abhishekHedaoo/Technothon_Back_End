@@ -1,6 +1,7 @@
 from flask import Flask, Response, jsonify
 import json
 import resource.TreeNeededResources as TNR
+import resource.DetailsResources as DR
 
 from .config import app_config
 
@@ -19,7 +20,8 @@ def create_app(env_name):
     """
     Example endpoint
     """
-    dataListJson = TNR.getTreeNeeded()
-    return dataListJson, 200
+    # dataListJson = TNR.getTreeNeeded()
+    alldataListJson = DR.getAllDetails()
+    return alldataListJson, 200
 
   return app

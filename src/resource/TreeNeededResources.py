@@ -1,5 +1,5 @@
 import pandas as pd
-from flask import Flask, json
+import json
 import src.models.TreeNeededModel as TNM
 
 def getTreeNeeded():
