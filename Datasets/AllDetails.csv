@@ -1,4 +1,4 @@
-ward_no,no_trees,population,co2_absorbtion,co2_emitted_population,co2_emitted_vehicles,co2_emitted_total,excessed_co2,tree_required
+ward_no,no_trees,population,co2_absorbtion,co2_emitted_population,co2_emitted_vehicles,co2_emitted_total,excess_co2,tree_required
 1,5463,23987,2345345345,5475,2345,789,12345,35723
 2,5463,23987,2345345345,5475,2345,789,12345,35723
 3,5463,23987,2345345345,5475,2345,789,12345,35723

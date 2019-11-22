@@ -1,5 +1,5 @@
 class DetailsModel:
-  def __init__(self,ward_no,no_trees,population,co2_absorbtion,co2_emitted_population,co2_emitted_vehicles,co2_emitted_total,excessed_co2,tree_required):
+  def __init__(self,ward_no,no_trees,population,co2_absorbtion,co2_emitted_population,co2_emitted_vehicles,co2_emitted_total,excess_co2,tree_required):
     self.ward_no = ward_no
     self.no_trees = no_trees
     self.population = population
@@ -7,7 +7,7 @@ class DetailsModel:
     self.co2_emitted_population = co2_emitted_population
     self.co2_emitted_vehicles = co2_emitted_vehicles
     self.co2_emitted_total = co2_emitted_total
-    self.excessed_co2 = excessed_co2
+    self.excess_co2 = excess_co2
     self.tree_required = tree_required
   
 
@@ -20,6 +20,6 @@ class DetailsModel:
       "co2_emitted_population": str(self.co2_emitted_population),
       "co2_emitted_vehicles": str(self.co2_emitted_vehicles),
       "co2_emitted_total": str(self.co2_emitted_total),
-      "excessed_co2": str(self.excessed_co2),
+      "excess_co2": str(self.excess_co2),
       "tree_required": str(self.tree_required),
     }
