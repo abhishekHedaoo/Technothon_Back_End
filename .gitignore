@@ -27,3 +27,9 @@ pip-log.txt
 venv
 *.pyc
 build
+
+#csv files
+*.csv
+
+#xlsx files
+*.xlsx

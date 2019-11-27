@@ -30,4 +30,9 @@ def create_app(env_name):
           status=200
     )
 
+  @app.route('/process_data', methods=['GET'])
+  def processData():
+    DR.runDataAnalyticsModule()
+    return 200
+    
   return app
