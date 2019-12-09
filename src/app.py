@@ -33,6 +33,11 @@ def create_app(env_name):
   @app.route('/process_data', methods=['GET'])
   def processData():
     DR.runDataAnalyticsModule()
-    return 200
+    alldataListJsonFromDM = DR.getAllDetails()
+    return Response(
+      mimetype="application/json",
+      response=alldataListJsonFromDM,
+      status=200
+    )
     
   return app

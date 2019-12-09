@@ -15,3 +15,4 @@ def getAllDetails():
 
 def runDataAnalyticsModule():
   DAM.performAnalytics()
+  return
